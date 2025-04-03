@@ -1,12 +1,8 @@
 import "./App.css";
-import PokemonCards from "./components/pokemoncards";
+import PokemonCard from "./components/PokemonCard";
 
 function App() {
-  return (
-    <div>
-      <PokemonCards/>
-    </div>
-  );
+  return <PokemonCard />;
 }
 
 export default App;
