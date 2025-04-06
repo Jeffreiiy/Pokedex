@@ -1,4 +1,5 @@
 import "./App.css";
+import NavBar from "./components/NavBar";
 import PokemonCard from "./components/PokemonCard";
 import { useState } from "react";
 
@@ -39,18 +40,7 @@ function App() {
 
   return (
     <div>
-      <nav>
-        {/* plus de boutons en dur ! */}
-        {pokemonList.map((pokemon) => (
-          // biome-ignore lint/a11y/useButtonType: <explanation>
-          <button
-            key={pokemon.name}
-            onClick={() => setPokemonName(pokemon.name)}
-          >
-            {pokemon.name}
-          </button>
-        ))}
-      </nav>
+      <NavBar setPokemonName={setPokemonName} pokemonList={pokemonList} />
       <PokemonCard pokemon={pokemon} />
     </div>
   );
