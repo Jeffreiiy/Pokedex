@@ -25,7 +25,7 @@ function App() {
   return (
     <div>
       <PokemonCard pokemon={pokemon} />
-      <button type="button" onClick={() => setPokemonName("Bulbasaur")}>
+      <button type="button" onClick={() => setPokemonName("bulbasaur")}>
         bulbasaur
       </button>
       <button type="button" onClick={() => setPokemonName("mew")}>
